@@ -1,15 +1,20 @@
 import "./App.css";
-import PostsLists from "./feature/posts/PostsList";
+// import PostsLists from "./feature/posts/PostsList";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import AppRoutes from "./components/AppRoutes";
 
 function App() {
   return (
-    <>
+    <Router>
       <div className="container">
         <h1>Welcome to the React app!</h1>
         <p>Find this application layout in client/src/App.jsx</p>
-        <PostsLists />
+        <Navbar />
+        {/* <PostsLists /> */}
+        <AppRoutes />
       </div>
-    </>
+    </Router>
   );
 }
 

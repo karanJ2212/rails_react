@@ -11,11 +11,10 @@ export default function PostsList() {
   useEffect(() => {
     async function loadPost() {
       try {
-        console.log(API_URL);
         const res = await fetch(API_URL);
         if (res.ok) {
           const json = await res.json();
-          console.log(json);
+
           setPost(json);
         } else {
           throw res;
