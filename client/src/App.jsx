@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 // import PostsLists from "./feature/posts/PostsList";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
