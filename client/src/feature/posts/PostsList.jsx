@@ -1,7 +1,8 @@
-//import React from "react";
+import React from "react";
 //api url from  .env.development file
 import { useEffect, useState } from "react";
 import { API_URL } from "../../constants";
+import { Link } from "react-router-dom";
 
 export default function PostsList() {
   const [posts, setPost] = useState([]);
@@ -34,6 +35,9 @@ export default function PostsList() {
       {posts.map((post) => (
         <div key={post.id} className="post-container">
           <h2>{post.title}</h2>
+          <Link to={`posts/${post.id}`} className="post-title">
+            {post.title}
+          </Link>
           <p>{post.body}</p>
         </div>
       ))}
