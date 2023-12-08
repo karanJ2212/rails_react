@@ -55,6 +55,7 @@ export default function PostsList() {
               {post.title}
             </Link>
           </h2>
+          <Link to={`/posts/${post.id}/edit`}>edit</Link>
           <div className="Post-links">
             <button onClick={() => deletePosts(post.id)}>Delete</button>
           </div>

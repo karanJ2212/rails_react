@@ -29,6 +29,7 @@ export default function PostEditForm() {
     };
     fetchCurrentPosts();
   }, [id]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
